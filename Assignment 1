@@ -1,0 +1,30 @@
+import pandas as pd
+
+# Creating the Student DataFrame
+student_data = {
+    "Std_id": ["St11", "St12", "St13", "St14", "St15", "St16", "St17", "St18", "St19", "St20"],
+    "name": ["Rama", "Krishna", "Balarama", "Hanuma", "Jaya", "Sita", "Radha", "Rukmini", "Lakshmi", "Bharatha"],
+    "Sem": [1, 1, 2, 2, 3, 3, 3, 2, 1, 1],
+    "age": [19, 20, 21, 18, 20, 22, 19, 17, 19, 22],
+    "CGPA": [7.5, 8.9, 9.9, 9.5, 8.3, 8.5, 8.3, 8.1, 9.2, 9.5],
+    "Dept_id": ["D1", "D1", "D2", "D2", "D3", "D4", "D4", "D4", "D1", "D2"]
+}
+
+student_df = pd.DataFrame(student_data)
+
+# Creating the Department DataFrame
+dept_data = {
+    "Dept_id": ["D1", "D2", "D4", "D5", "D6"],
+    "Dname": ["CSE", "Mech", "AI and ML", "ECE", "Civil"],
+    "Dloc": ["Bangalore", "Goa", "Delhi", "Bangalore", "Mathura"],
+    "D_Hod": ["Indra", "Chadra", "Surya", "Mourya", "Harsha"]
+}
+
+dept_df = pd.DataFrame(dept_data)
+
+# Displaying the DataFrames
+print("Student DataFrame:")
+print(student_df)
+
+print("\nDepartment DataFrame:")
+print(dept_df)
